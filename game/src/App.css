@@ -1,0 +1,173 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.PageContent{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.aButton {
+  background-color: ghostwhite;
+  box-shadow: 3px 3px lightgray;
+}
+
+.aButton:hover {
+  background-color: lightgray;
+}
+
+.CareerButton {
+  background-color: ghostwhite;
+  box-shadow: 3px 3px lightgray;
+  width: 300px;
+  height: auto; 
+  padding: 15px 0px;
+  margin: 10px 20px;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px; 
+  border-style: solid;
+  border-width: 2px;
+}
+
+.CareerButton:hover {
+  background-color: lightgray;
+}
+
+.CareerButtonTitle {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.CareerButtonImg {
+  display:block; 
+  width: 100px;
+}
+
+.CareerButtonDes {
+  font-size: 18px;
+  width: 80%;
+  text-align: left;
+}
+
+/* Progress bar */
+.progressContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.progressText{
+  width: 30px;
+  margin-left: 15px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+
+  color: silver;
+
+}
+
+.progressBar{
+  width: 300px;
+  height: 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  border-radius: 60px;
+  background-color: lightgray;
+
+  overflow: hidden;
+}
+
+.progressFill{
+  width: 0%;
+
+  background: linear-gradient(
+    180deg,
+    darkgray 0%,
+    dimgray 35%,
+    gray 100%
+  );
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(46, 56, 77, 0.4);
+}
+
+.modal-container {
+  width: 70%;
+  height: 80%;
+  gap: 20px;
+  pointer-events: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 1px solid var(--gh-grey-4);
+  border-radius: 4px;
+  outline: 0;
+  padding: 8px 24px;
+  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Set a high z-index value */
+} 
+
